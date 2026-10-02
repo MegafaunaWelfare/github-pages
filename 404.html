@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found | Megafauna Welfare Foundation</title>
+  <!-- Styles are inline: GitHub Pages serves this file at any missing path, so relative links to assets may not resolve. -->
+  <style>
+    :root { --cream: #FBF7F0; --sand: #F3EADB; --ink: #1F2A24; --muted: #56625B; --forest: #1E4D3A; --accent: #B9532A; --saffron: #E9A23B; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+    main { max-width: 480px; }
+    svg { width: 88px; height: 88px; margin: 0 auto 24px; display: block; }
+    h1 { margin: 0; font-family: "Fraunces", Georgia, serif; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.15; color: var(--forest); }
+    p { margin: 16px 0 32px; color: var(--muted); font-size: 1.1rem; }
+    a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover { background: #9E4421; }
+    a:focus-visible { outline: 3px solid var(--saffron); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="32" fill="#1E4D3A"/>
+      <g fill="#FBF7F0">
+        <ellipse cx="18.5" cy="29" rx="4.6" ry="5.8" transform="rotate(-24 18.5 29)"/>
+        <ellipse cx="26.5" cy="19.5" rx="4.6" ry="6" transform="rotate(-8 26.5 19.5)"/>
+        <ellipse cx="37.5" cy="19.5" rx="4.6" ry="6" transform="rotate(8 37.5 19.5)"/>
+        <ellipse cx="45.5" cy="29" rx="4.6" ry="5.8" transform="rotate(24 45.5 29)"/>
+      </g>
+      <path fill="#E9A23B" d="M32 51.5c-9.6-6.4-12.6-11.8-9.6-15.9 2.5-3.4 7.1-3.2 9.6.3 2.5-3.5 7.1-3.7 9.6-.3 3 4.1 0 9.5-9.6 15.9z"/>
+    </svg>
+    <h1>This trail went cold.</h1>
+    <p>We couldn't find the page you were looking for. It may have moved, or the link may be mistyped.</p>
+    <a id="home-link" href="/">Back to the homepage</a>
+  </main>
+  <script>
+    // On a github.io project site the homepage lives under /<repo>/, not at the domain root.
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      if (/\.github\.io$/.test(location.hostname) && parts.length) {
+        document.getElementById('home-link').href = '/' + parts[0] + '/';
+      }
+    })();
+  </script>
+</body>
+</html>

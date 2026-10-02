@@ -1,75 +1,44 @@
-<header>
+# Megafauna Welfare Foundation website
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+The website of **Megafauna Welfare Foundation**, a Chandigarh-based non-profit that protects stray and neglected animals across the Chandigarh Tricity through daily feeding, emergency veterinary aid, legal aid and community sensitisation.
 
-# GitHub Pages
+Live site (once GitHub Pages is enabled): <https://megafaunawelfare.github.io/github-pages/>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## What's here
 
-</header>
+```
+index.html            The whole site (one page, in sections)
+404.html              "Page not found" page (self-contained)
+assets/css/styles.css Styles: colours and fonts are set at the top in :root
+assets/js/main.js     Mobile menu, scroll effects, contact form
+assets/img/logo.svg   Logo and browser icon
+assets/img/og-image.png  Preview image shown when the link is shared
+.nojekyll             Tells GitHub Pages to serve the files as they are
+```
 
-<!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
--->
+The site is plain HTML, CSS and JavaScript, so there's no build step and nothing to install.
 
-## Welcome
+## Publishing with GitHub Pages
 
-With GitHub Pages, you can host project blogs, documentation, resumes, portfolios, or any other static content you'd like. Your GitHub repository can easily become its own website. In this course, we'll show you how to set up your own site or blog using GitHub Pages.
+1. Merge the changes into `main`.
+2. In the repository, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose `main` and `/ (root)`, then **Save**.
+4. After a minute or two the site is live at the address above.
 
-- **Who is this for**: Beginners, students, project maintainers, small businesses.
-- **What you'll learn**: How to build a GitHub Pages site.
-- **What you'll build**: We'll build a simple GitHub Pages site with a blog. We'll use [Jekyll](https://jekyllrb.com), a static site generator.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course takes less than one hour to complete.
+## Editing the content
 
-In this course, you will:
+All text is in `index.html`, grouped by section (`<!-- About -->`, `<!-- Our work -->`, and so on). Open the file on GitHub, click the pencil icon, edit, and commit. The site updates automatically.
 
-1. Enable GitHub Pages
-2. Configure your site
-3. Customize your home page
-4. Create a blog post
-5. Merge your pull request
+### Before launch
 
-### How to start this course
+- **Contact email:** replace `contact@example.org` in `index.html`. It appears twice: in the contact list and in the form's `data-email` attribute. Search the file for `TODO`.
+- **Phone / WhatsApp / social media:** add them to the contact list in the `<!-- Contact -->` section if you'd like them shown.
+- **Photos:** real photos of your work will make the site far more powerful. Add them to `assets/img/` and reference them from `index.html`.
 
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'github-pages',
-  owner: '@me',
-  name: 'skills-github-pages',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
+### Using a custom domain
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=github-pages&owner=%40me&name=skills-github-pages&description=My+clone+repository&visibility=public)
+If you move to your own domain (for example `www.yourdomain.org`), set it under **Settings → Pages → Custom domain** and update the two `og:` URLs near the top of `index.html` so link previews keep working.
 
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+## Sources for the facts on the site
 
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+The programme details come from the foundation's public listings (Give.do and company registry entries, CIN U85500PB2024NPL061864). Please review all text, especially the figures and the "Know the law" section, and keep it up to date.
