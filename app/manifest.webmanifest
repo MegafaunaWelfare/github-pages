@@ -1,0 +1,23 @@
+{
+  "name": "MegaFauna Care",
+  "short_name": "MegaFauna",
+  "description": "Report an animal in need, keep track of the community animals you look after, and log your feeding rounds.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF7F0",
+  "theme_color": "#FBF7F0",
+  "lang": "en-IN",
+  "categories": ["lifestyle", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Report an animal in need", "short_name": "Report", "url": "./#report" },
+    { "name": "Log a feeding round", "short_name": "Feeding", "url": "./#feeding" }
+  ]
+}

@@ -537,6 +537,7 @@ a:hover { color: var(--accent); }
 .help-intro { position: sticky; top: calc(var(--header-h) + 32px); }
 .help-intro h2 { color: var(--forest-dark); }
 .help-intro p:not(.kicker) { margin: 16px 0 28px; font-size: 1.1rem; color: var(--muted); }
+.help-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .steps {
   margin: 0;
@@ -655,6 +656,21 @@ a:hover { color: var(--accent); }
 .link-arrow .icon { width: 1.05em; height: 1.05em; transition: transform 0.2s; }
 .involve-card:hover .link-arrow { color: var(--accent); }
 .involve-card:hover .link-arrow .icon { transform: translateX(3px); }
+
+.app-promo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 24px 28px;
+  border-radius: var(--r);
+  background: var(--sand);
+}
+.app-promo img { flex-shrink: 0; width: 64px; height: 64px; }
+.app-promo-copy { flex: 1; min-width: 0; }
+.app-promo h3 { color: var(--forest-dark); }
+.app-promo p { margin-top: 6px; color: var(--muted); font-size: 0.98rem; }
+.app-promo .btn { flex-shrink: 0; }
 
 /* Donate ----------------------------------------------------------------- */
 
@@ -885,4 +901,8 @@ a:hover { color: var(--accent); }
 
   .steps li { padding-left: 64px; }
   .footer-nav { gap: 10px 32px; }
+
+  .app-promo { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px; }
+  .app-promo .btn,
+  .help-actions .btn { width: 100%; }
 }
