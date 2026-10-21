@@ -507,7 +507,7 @@
       storageWorks = true;
     } catch (err) {
       storageWorks = false;
-      toast("Couldn't save on this device. Download a backup from More to keep your records.");
+      toast(PREVIEW ? "Couldn't save on this device." : "Couldn't save on this device. Download a backup from More to keep your records.");
     }
   }
 
@@ -781,7 +781,7 @@
     if (storageWorks) return '';
     return html`<div class="notice notice-warn">
       ${icon('warn')}
-      <div class="notice-body"><p><strong>This browser isn't saving your records.</strong> Private browsing or blocked site data can cause this. Anything you add will be lost when you close the page, unless you download a backup from More.</p></div>
+      <div class="notice-body"><p><strong>This browser isn't saving your records.</strong> Private browsing or blocked site data can cause this. Anything you add will be lost when you close the page${PREVIEW ? '' : ', unless you download a backup from More'}.</p></div>
     </div>`;
   }
 
