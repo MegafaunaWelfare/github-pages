@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found | Pawgarh Veterinarski Private Limited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400..700&display=swap">
+  <!-- Styles are inline: GitHub Pages serves this file at any missing path, so relative links to assets may not resolve. -->
+  <style>
+    :root { --paper: #FBF8F3; --ink: #1C2033; --muted: #565C72; --indigo: #27336F; --indigo-2: #3B4A97; --indigo-dark: #1A2350; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+    main { max-width: 480px; }
+    svg { width: 96px; height: 96px; margin: 0 auto 24px; display: block; }
+    h1 { margin: 0; font-family: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif; font-weight: 800; letter-spacing: -0.02em; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.12; color: var(--indigo-dark); }
+    p { margin: 16px 0 32px; color: var(--muted); font-size: 1.1rem; }
+    a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: var(--indigo);
+      color: var(--paper);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover { background: var(--indigo-dark); }
+    a:focus-visible { outline: 3px solid var(--indigo-2); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path fill="#27336F" stroke="#27336F" stroke-width="3" stroke-linejoin="round" d="M10 6h9v6h8.5V6h9v6H45V6h9v24c0 14.5-9 23.5-22 29C19 53.5 10 44.5 10 30Z"/>
+      <g fill="#FBF8F3">
+        <path d="M32 33.5c4.6 0 8.6 4.4 8.6 8.4 0 3-2.3 4.6-4.8 4.1-1.3-.3-2.5-.7-3.8-.7s-2.5.4-3.8.7c-2.5.5-4.8-1.1-4.8-4.1 0-4 4-8.4 8.6-8.4Z"/>
+        <ellipse cx="21.6" cy="30.2" rx="3.3" ry="4.2" transform="rotate(-22 21.6 30.2)"/>
+        <ellipse cx="27.4" cy="24" rx="3.4" ry="4.4" transform="rotate(-8 27.4 24)"/>
+        <ellipse cx="36.6" cy="24" rx="3.4" ry="4.4" transform="rotate(8 36.6 24)"/>
+        <ellipse cx="42.4" cy="30.2" rx="3.3" ry="4.2" transform="rotate(22 42.4 30.2)"/>
+      </g>
+    </svg>
+    <h1>This page has wandered off.</h1>
+    <p>We couldn't find the page you were looking for. It may have moved, or the link may be mistyped.</p>
+    <a id="home-link" href="/">Back to the homepage</a>
+  </main>
+  <script>
+    // On a github.io project site the homepage lives under /<repo>/, not at the domain root.
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      if (/\.github\.io$/.test(location.hostname) && parts.length) {
+        document.getElementById('home-link').href = '/' + parts[0] + '/';
+      }
+    })();
+  </script>
+</body>
+</html>

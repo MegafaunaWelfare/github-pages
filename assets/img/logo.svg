@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pawgarh Veterinarski Private Limited">
+  <path fill="#27336F" stroke="#27336F" stroke-width="3" stroke-linejoin="round" d="M10 6h9v6h8.5V6h9v6H45V6h9v24c0 14.5-9 23.5-22 29C19 53.5 10 44.5 10 30Z"/>
+  <g fill="#FBF8F3">
+    <path d="M32 33.5c4.6 0 8.6 4.4 8.6 8.4 0 3-2.3 4.6-4.8 4.1-1.3-.3-2.5-.7-3.8-.7s-2.5.4-3.8.7c-2.5.5-4.8-1.1-4.8-4.1 0-4 4-8.4 8.6-8.4Z"/>
+    <ellipse cx="21.6" cy="30.2" rx="3.3" ry="4.2" transform="rotate(-22 21.6 30.2)"/>
+    <ellipse cx="27.4" cy="24" rx="3.4" ry="4.4" transform="rotate(-8 27.4 24)"/>
+    <ellipse cx="36.6" cy="24" rx="3.4" ry="4.4" transform="rotate(8 36.6 24)"/>
+    <ellipse cx="42.4" cy="30.2" rx="3.3" ry="4.2" transform="rotate(22 42.4 30.2)"/>
+  </g>
+</svg>
