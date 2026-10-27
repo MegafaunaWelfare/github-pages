@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Scales of justice with a paw print on one pan, and a gavel">
+<defs></defs>
+
+  <rect width="800" height="600" fill="#1E4D3A"/>
+  <circle cx="400" cy="290" r="250" fill="#2A6249"/>
+  <path d="M0 520 C 200 508 600 508 800 520 L 800 600 L 0 600 Z" fill="#143426"/>
+  <g transform="translate(220 140) scale(1 1)">
+  <rect x="172" y="40" width="16" height="262" rx="6" fill="#E9A23B"/>
+  <path d="M120 330 C 120 304 150 292 180 292 C 210 292 240 304 240 330 Z" fill="#E9A23B"/>
+  <rect x="104" y="322" width="152" height="10" rx="5" fill="#B97C1E"/>
+  <circle cx="180" cy="34" r="16" fill="#E9A23B"/>
+  <rect x="40" y="56" width="280" height="12" rx="6" fill="#E9A23B" transform="rotate(-6 180 62)"/>
+  <circle cx="180" cy="62" r="9" fill="#B97C1E"/>
+  
+    <path d="M48 76 L 2 172" stroke="#B97C1E" stroke-width="3"/>
+    <path d="M48 76 L 94 172" stroke="#B97C1E" stroke-width="3"/>
+    <path d="M-10 172 L 106 172 C 100 202 78 212 48 212 C 18 212 -4 202 -10 172 Z" fill="#E9A23B"/>
+    <ellipse cx="48" cy="172" rx="58" ry="8" fill="#B97C1E"/>
+  
+    <path d="M312 44 L 266 140" stroke="#B97C1E" stroke-width="3"/>
+    <path d="M312 44 L 358 140" stroke="#B97C1E" stroke-width="3"/>
+    <path d="M254 140 L 370 140 C 364 170 342 180 312 180 C 282 180 260 170 254 140 Z" fill="#E9A23B"/>
+    <ellipse cx="312" cy="140" rx="58" ry="8" fill="#B97C1E"/></g>
+  <g transform="translate(243 252) scale(0.58 0.58)">
+  <g fill="#FBF7F0">
+    <ellipse cx="18.5" cy="29" rx="4.6" ry="5.8" transform="rotate(-24 18.5 29)"/>
+    <ellipse cx="26.5" cy="19.5" rx="4.6" ry="6" transform="rotate(-8 26.5 19.5)"/>
+    <ellipse cx="37.5" cy="19.5" rx="4.6" ry="6" transform="rotate(8 37.5 19.5)"/>
+    <ellipse cx="45.5" cy="29" rx="4.6" ry="5.8" transform="rotate(24 45.5 29)"/>
+    <path d="M32 51.5c-9.6-6.4-12.6-11.8-9.6-15.9 2.5-3.4 7.1-3.2 9.6.3 2.5-3.5 7.1-3.7 9.6-.3 3 4.1 0 9.5-9.6 15.9z"/>
+  </g></g>
+  <rect x="507" y="232" width="34" height="46" rx="6" fill="#FBF7F0" transform="rotate(-8 524 255)"/>
+  <rect x="514" y="242" width="20" height="3" fill="#1E4D3A" transform="rotate(-8 524 255)"/>
+  <rect x="514" y="250" width="20" height="3" fill="#1E4D3A" transform="rotate(-8 524 255)"/>
+  <rect x="514" y="258" width="14" height="3" fill="#1E4D3A" transform="rotate(-8 524 255)"/>
+  <g transform="translate(520 380) scale(1 1)">
+  <g transform="rotate(-30 110 70)">
+    <rect x="96" y="40" width="16" height="130" rx="6" fill="#6B4226"/>
+    <rect x="40" y="10" width="128" height="52" rx="12" fill="#8B5A33"/>
+    <rect x="40" y="10" width="20" height="52" rx="6" fill="#6B4226"/>
+    <rect x="148" y="10" width="20" height="52" rx="6" fill="#6B4226"/>
+  </g>
+  <rect x="120" y="118" width="100" height="22" rx="6" fill="#6B4226"/></g>
+  <g transform="translate(80 470) scale(1 1)">
+  <rect x="0" y="14" width="200" height="36" rx="5" fill="#D2683C"/>
+  <rect x="8" y="20" width="186" height="20" rx="3" fill="#FFF8EA"/>
+  <path d="M8 26h186M8 32h186" stroke="#E6D8BE" stroke-width="2"/>
+  <rect x="0" y="6" width="200" height="14" rx="5" fill="#D2683C"/>
+  <rect x="80" y="8" width="40" height="8" rx="2" fill="#E9A23B"/></g>
+  <g transform="translate(100 440) scale(0.9 0.9)">
+  <rect x="0" y="14" width="200" height="36" rx="5" fill="#E9A23B"/>
+  <rect x="8" y="20" width="186" height="20" rx="3" fill="#FFF8EA"/>
+  <path d="M8 26h186M8 32h186" stroke="#E6D8BE" stroke-width="2"/>
+  <rect x="0" y="6" width="200" height="14" rx="5" fill="#E9A23B"/>
+  <rect x="80" y="8" width="40" height="8" rx="2" fill="#E9A23B"/></g>
+  
+</svg>

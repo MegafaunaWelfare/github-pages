@@ -12,12 +12,21 @@ The Casebook: <https://megafaunawelfare.github.io/github-pages/casebook/>
 ## What's here
 
 ```
-index.html            The whole site (one page, in sections)
+index.html            Homepage
+about.html            About us: story, mission, where we work, registration details
+work.html             Our work: the five projects and the drives
+help.html             Animal in need? Steps, first aid, reporting cruelty, tips for feeders
+law.html              Know the law
+news.html             News, each item linked to the published report it's based on
+get-involved.html     Volunteering, internships and other ways to help
+donate.html           Donate, other ways to give, questions about giving
+contact.html          Contact details and a message form
 404.html              "Page not found" page (self-contained)
 assets/css/styles.css Styles: colours and fonts are set at the top in :root
-assets/js/main.js     Mobile menu, scroll effects, contact form
+assets/js/main.js     Mobile menu, scroll effects, card scrolling, contact form
 assets/img/logo.svg   Logo and browser icon
-assets/img/og-image.png  Preview image shown when the link is shared
+assets/img/illustrations/  The site's drawings (see "Illustrations and photos" below)
+assets/img/og-image.png    Preview image shown when a link to the site is shared
 app/                  The MegaFauna Care app (see below)
 casebook/             The MegaFauna Casebook, the team's case files (see below)
 tests/                Tests for the Casebook's encryption, file format and merging
@@ -25,6 +34,17 @@ tests/                Tests for the Casebook's encryption, file format and mergi
 ```
 
 The site and the apps are plain HTML, CSS and JavaScript, so there's no build step and nothing to install.
+
+### How the site is laid out
+
+The site follows the pattern of the best wildlife charity websites, such as the Sheldrick Wildlife Trust's, adapted for street animals in the way Animal Aid Unlimited's site puts reporting an injured animal first:
+
+- An **emergency bar** at the top of every page links straight to reporting an animal in the Care app.
+- A full-width **illustrated hero** with two clear actions: donate, or get help for an animal.
+- **Impact figures**, **project cards**, a scrolling **"Who we help"** row, a **sanctuary** feature, an **emergency guide**, **news**, **the law**, ways to **get involved** and a **donate** panel on the homepage, each leading to its own page.
+- A large **footer** with every page and the foundation's registration details.
+
+Only the structure and approach are borrowed. All the text, drawings and branding are the foundation's own.
 
 ## Publishing with GitHub Pages
 
@@ -35,18 +55,28 @@ The site and the apps are plain HTML, CSS and JavaScript, so there's no build st
 
 ## Editing the content
 
-All text is in `index.html`, grouped by section (`<!-- About -->`, `<!-- Our work -->`, and so on). Open the file on GitHub, click the pencil icon, edit, and commit. The site updates automatically.
+Each page is its own HTML file, and its text is grouped by section (`<!-- Our work -->`, `<!-- News -->`, and so on). Open the file on GitHub, click the pencil icon, edit, and commit. The site updates automatically.
+
+- **The menu and footer** are repeated at the top and bottom of every page. If you add, rename or remove a page, change the menu (`<nav class="site-nav"`) and the footer (`<footer class="site-footer">`) in each `.html` file.
+- **The figures** (1,000+ animals fed every day, 12 active legal cases) appear on the homepage, `work.html` and `about.html`. Search the files for them when they change.
+- **News:** to add an item, copy one `<article class="news-item">` block in `news.html`, put it first and change the text and links. To show it on the homepage too, replace the first card in the `<!-- News -->` section of `index.html`.
 
 ### Before launch
 
-- **Contact email:** replace `contact@example.org` in `index.html`. It appears twice: in the contact list and in the form's `data-email` attribute. Search the file for `TODO`.
-- **Phone / WhatsApp / social media:** add them to the contact list in the `<!-- Contact -->` section if you'd like them shown.
-- **The app's WhatsApp number and email:** see [Setting up the app](#setting-up-the-app) below.
-- **Photos:** real photos of your work will make the site far more powerful. Add them to `assets/img/` and reference them from `index.html`.
+- **Contact email:** replace `contact@example.org` in `contact.html`. It appears twice: in the contact list and in the form's `data-email` attribute. Search the file for `TODO`.
+- **Phone / WhatsApp / social media:** add them to the contact list in `contact.html` if you'd like them shown.
+- **The app's WhatsApp number and email:** see [Setting up the app](#setting-up-the-app) below. Every "Report it now" button on the site opens the app's report form.
+- **Check the facts:** see [Sources for the facts on the site](#sources-for-the-facts-on-the-site). In particular, confirm the 80G wording with Give.do and that the news items are described the way you'd like.
+
+### Illustrations and photos
+
+The drawings in `assets/img/illustrations/` are original illustrations made for this site, in the site's colours. They're drawings, not photos of the foundation's animals, so nothing on the site pretends to show a real rescue.
+
+Real photos of your work will make the site far more powerful. To swap a drawing for a photo, add the photo to `assets/img/` (a JPEG around 1600 pixels wide for the homepage hero, 1200 pixels wide for the others) and change the `src` of the matching `<img>`. Write an `alt` text that says what the photo shows, for example `alt="Volunteers feeding dogs in Sector 22"`. Use photos you took or have permission to use.
 
 ### Using a custom domain
 
-If you move to your own domain (for example `www.yourdomain.org`), set it under **Settings → Pages → Custom domain** and update the two `og:` URLs near the top of `index.html` (and of `app/index.html`) so link previews keep working.
+If you move to your own domain (for example `www.yourdomain.org`), set it under **Settings → Pages → Custom domain** and update the `og:url` and `og:image` addresses near the top of each page (and of `app/index.html`), and the addresses in the `application/ld+json` block on the homepage, so link previews keep working.
 
 ## The MegaFauna Care app
 
@@ -143,7 +173,14 @@ The cases live only in the browser they were entered in. **Share → Back up eve
 
 ## Sources for the facts on the site
 
-The programme details come from the foundation's public listings (Give.do and company registry entries, CIN U85500PB2024NPL061864). Please review all text, especially the figures and the "Know the law" section, and keep it up to date.
+The programme details come from the foundation's public listings (Give.do and company registry entries, CIN U85500PB2024NPL061864). Please review all text, especially the figures and the "Know the law" section, and keep it up to date. In detail:
+
+- **Give.do profile** ([give.do/ngos/megafauna-welfare-foundation](https://give.do/ngos/megafauna-welfare-foundation)): the five projects; 1,000+ animals fed every day across the Tricity and neighbouring areas, including hard-to-reach spots; the veterinary team's work in flood-hit areas including Sultanpur Lodhi; 12 active legal cases; sensitisation sessions for schools, colleges, residential areas and public servants; the sanctuary in development about an hour from Chandigarh; the appeal for goats and sheep at Bakri Mandi; and 80G eligibility for donations.
+- **Company registry listings:** incorporated on 21 June 2024; registered office in Mullanpur, Mohali, Punjab.
+- **News items:** The Tribune's reports on the High Court notice on the foundation's SPCA petition and on the PEC campus dogs, and ThePrint's report on the Animal Birth Control Rules panel at the Press Club of India. Each item on `news.html` links to its report.
+- **Internships:** the foundation's page on Internshala.
+
+The website's emergency steps, first-aid advice and tips for feeders are the same as the Care app's Guide, and the "Know the law" page follows the app and the Casebook's investigation guide, so change them together.
 
 The app's first-aid advice is general guidance for people without veterinary training, and its legal text is general information, not legal advice. It's worth asking a vet and a lawyer you work with to read the app's Guide before you promote it widely.
 

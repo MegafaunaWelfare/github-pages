@@ -63,24 +63,81 @@
     revealEls.forEach(function (el) { revealObserver.observe(el); });
   }
 
-  /* Highlight the nav link for the section in view ----------------------- */
+  /* Scrolling card rails: previous / next buttons ------------------------ */
 
-  var navLinks = document.querySelectorAll('.site-nav ul a[href^="#"]');
-  var sections = Array.prototype.map.call(navLinks, function (link) {
+  document.querySelectorAll('[data-rail]').forEach(function (wrap) {
+    var rail = wrap.querySelector('.rail');
+    var prev = wrap.querySelector('[data-rail-prev]');
+    var next = wrap.querySelector('[data-rail-next]');
+    if (!rail || !prev || !next) return;
+
+    function step() {
+      var item = rail.querySelector('li');
+      var gap = parseFloat(getComputedStyle(rail).columnGap) || 0;
+      return item ? item.getBoundingClientRect().width + gap : rail.clientWidth * 0.8;
+    }
+
+    function update() {
+      var max = rail.scrollWidth - rail.clientWidth - 2;
+      prev.disabled = rail.scrollLeft <= 2;
+      next.disabled = rail.scrollLeft >= max;
+    }
+
+    prev.addEventListener('click', function () {
+      rail.scrollBy({ left: -step(), behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+    next.addEventListener('click', function () {
+      rail.scrollBy({ left: step(), behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+    rail.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+
+  /* In-page section menu: highlight the section in view ------------------ */
+
+  var subnavLinks = document.querySelectorAll('.subnav a[href^="#"]');
+  var subnavTargets = Array.prototype.map.call(subnavLinks, function (link) {
     return document.querySelector(link.getAttribute('href'));
   }).filter(Boolean);
 
-  if ('IntersectionObserver' in window && sections.length) {
-    var navObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach(function (link) {
-          link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
-        });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
+  if (subnavTargets.length) {
+    var subnavList = document.querySelector('.subnav ul');
+    var currentId = null;
+    var ticking = false;
 
-    sections.forEach(function (section) { navObserver.observe(section); });
+    // The current section is the last one whose top has passed 40% of the
+    // way down the screen. Above the first section, nothing is highlighted.
+    function updateSubnav() {
+      ticking = false;
+      var line = window.innerHeight * 0.4;
+      var current = null;
+      subnavTargets.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= line) current = section.id;
+      });
+      if (current === currentId) return;
+      currentId = current;
+      if (!current && subnavList.scrollLeft) subnavList.scrollTo({ left: 0 });
+
+      subnavLinks.forEach(function (link) {
+        var active = link.getAttribute('href') === '#' + current;
+        link.classList.toggle('is-active', active);
+
+        // On narrow screens the menu scrolls sideways: keep the active link in view.
+        if (active && subnavList.scrollWidth > subnavList.clientWidth) {
+          var offset = link.getBoundingClientRect().left - subnavList.getBoundingClientRect().left;
+          subnavList.scrollTo({ left: subnavList.scrollLeft + offset - 16, behavior: reduceMotion ? 'auto' : 'smooth' });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(updateSubnav);
+      }
+    }, { passive: true });
+    updateSubnav();
   }
 
   /* Contact form: compose an email in the visitor's mail app ------------- */
@@ -91,15 +148,14 @@
     var topicSelect = form.querySelector('[name="topic"]');
     var errorEl = document.getElementById('cf-error');
 
-    // Links like "Report a case" pre-select the matching topic.
-    document.querySelectorAll('[data-topic]').forEach(function (link) {
-      link.addEventListener('click', function () {
-        var topic = link.getAttribute('data-topic');
-        Array.prototype.forEach.call(topicSelect.options, function (option) {
-          if (option.text === topic) topicSelect.value = option.value;
-        });
+    // Links such as contact.html?topic=Volunteering pre-select the topic.
+    var params = new URLSearchParams(window.location.search);
+    var wanted = params.get('topic');
+    if (wanted) {
+      Array.prototype.forEach.call(topicSelect.options, function (option) {
+        if (option.text.toLowerCase() === wanted.toLowerCase()) topicSelect.value = option.value;
       });
-    });
+    }
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();

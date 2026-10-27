@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="A black goat and a white goat">
+<defs></defs>
+
+  <rect width="600" height="450" fill="#EFE7DA"/>
+  <circle cx="300" cy="230" r="190" fill="#DCCBB0"/>
+  <path d="M0 380 C 200 370 400 370 600 380 L 600 450 L 0 450 Z" fill="#CDB892"/>
+  <ellipse cx="440" cy="396" rx="104" ry="9" fill="#143426" opacity="0.16"/>
+  <g transform="translate(318 190) scale(0.84 0.84)">
+  <path d="M232 82 C 244 70 250 58 248 48" fill="none" stroke="#EFE6D8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="104" y="140" width="13" height="96" rx="6" fill="#D2C4AF"/>
+  <rect x="212" y="136" width="13" height="100" rx="6" fill="#D2C4AF"/>
+  <path d="M88 96 C 120 76 210 74 238 90 C 258 102 256 146 236 156 C 206 168 134 166 104 154 C 84 146 78 108 88 96 Z" fill="#EFE6D8"/>
+  <path d="M196 104 C 222 100 246 112 246 136 C 246 152 234 160 220 160 C 232 142 226 118 196 104 Z" fill="#D2C4AF" opacity=".6"/>
+  <rect x="88" y="140" width="14" height="98" rx="7" fill="#EFE6D8"/>
+  <rect x="226" y="134" width="14" height="104" rx="7" fill="#EFE6D8"/>
+  <path d="M96 104 C 86 86 78 66 74 48 L 50 56 C 56 80 66 100 82 118 Z" fill="#EFE6D8"/>
+  <path d="M60 36 C 64 18 78 8 92 10" fill="none" stroke="#B8A68E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M72 44 C 50 38 30 46 22 62 C 16 74 22 86 36 86 C 50 86 64 76 76 64 Z" fill="#EFE6D8"/>
+  <path d="M66 46 C 84 48 98 56 100 66 C 88 70 72 62 66 46 Z" fill="#D2C4AF"/>
+  <path d="M30 84 C 28 98 34 108 40 112 C 44 102 42 92 40 84 Z" fill="#FFFFFF"/>
+  <ellipse cx="24" cy="70" rx="5" ry="4" fill="#2A211C"/>
+  <circle cx="54" cy="56" r="4" fill="#2A211C"/>
+  <circle cx="52.8" cy="54.8" r="1.3" fill="#FFFFFF" opacity=".8"/></g>
+  <ellipse cx="180" cy="414" rx="120" ry="10" fill="#143426" opacity="0.16"/>
+  <g transform="translate(40 186) scale(0.96 0.96)">
+  <path d="M232 82 C 244 70 250 58 248 48" fill="none" stroke="#2F2A28" stroke-width="10" stroke-linecap="round"/>
+  <rect x="104" y="140" width="13" height="96" rx="6" fill="#1E1A19"/>
+  <rect x="212" y="136" width="13" height="100" rx="6" fill="#1E1A19"/>
+  <path d="M88 96 C 120 76 210 74 238 90 C 258 102 256 146 236 156 C 206 168 134 166 104 154 C 84 146 78 108 88 96 Z" fill="#2F2A28"/>
+  <path d="M196 104 C 222 100 246 112 246 136 C 246 152 234 160 220 160 C 232 142 226 118 196 104 Z" fill="#1E1A19" opacity=".6"/>
+  <rect x="88" y="140" width="14" height="98" rx="7" fill="#2F2A28"/>
+  <rect x="226" y="134" width="14" height="104" rx="7" fill="#2F2A28"/>
+  <path d="M96 104 C 86 86 78 66 74 48 L 50 56 C 56 80 66 100 82 118 Z" fill="#2F2A28"/>
+  <path d="M60 36 C 64 18 78 8 92 10" fill="none" stroke="#8F806F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M72 44 C 50 38 30 46 22 62 C 16 74 22 86 36 86 C 50 86 64 76 76 64 Z" fill="#2F2A28"/>
+  <path d="M66 46 C 84 48 98 56 100 66 C 88 70 72 62 66 46 Z" fill="#1E1A19"/>
+  <path d="M30 84 C 28 98 34 108 40 112 C 44 102 42 92 40 84 Z" fill="#5A524E"/>
+  <ellipse cx="24" cy="70" rx="5" ry="4" fill="#0E0C0B"/>
+  <circle cx="54" cy="56" r="4" fill="#0E0C0B"/>
+  <circle cx="52.8" cy="54.8" r="1.3" fill="#FFFFFF" opacity=".8"/></g>
+  
+</svg>

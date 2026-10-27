@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A dog with a bandaged leg beside a first-aid kit and a stethoscope">
+<defs></defs>
+
+  
+  <rect width="800" height="600" fill="#E3EEEC"/>
+  <circle cx="400" cy="300" r="250" fill="#BFDAD5"/>
+  <path d="M0 500 C 200 488 600 488 800 500 L 800 600 L 0 600 Z" fill="#A9C9C3"/>
+  <g transform="translate(470 380) scale(1.15 1.15)">
+  <path d="M58 22 C 58 8 66 2 85 2 C 104 2 112 8 112 22" fill="none" stroke="#C9C1B4" stroke-width="10" stroke-linecap="round"/>
+  <rect x="0" y="20" width="170" height="110" rx="16" fill="#FFFFFF"/>
+  <rect x="0" y="20" width="170" height="24" rx="12" fill="#EDE6DA"/>
+  <rect x="73" y="54" width="24" height="64" rx="5" fill="#B9532A"/>
+  <rect x="53" y="74" width="64" height="24" rx="5" fill="#B9532A"/></g>
+  <g transform="translate(560 340) scale(0.9 0.9)">
+  <path d="M30 6 C 22 6 18 12 18 22 L 22 70 C 26 98 50 112 72 112 C 94 112 110 98 112 74 L 116 22 C 116 12 112 6 104 6" fill="none" stroke="#1E4D3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M72 112 C 72 138 90 146 108 146 C 128 146 140 132 140 114" fill="none" stroke="#1E4D3A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="140" cy="104" r="16" fill="#8E9A9E"/>
+  <circle cx="140" cy="104" r="9" fill="#D7DEE0"/>
+  <circle cx="30" cy="6" r="5" fill="#8E9A9E"/>
+  <circle cx="104" cy="6" r="5" fill="#8E9A9E"/></g>
+  <ellipse cx="320" cy="526" rx="120" ry="12" fill="#143426" opacity="0.14"/>
+  <g transform="translate(200 252) scale(1.05 1.05)">
+  <path d="M190 252 C 232 258 252 232 240 210 C 233 197 214 199 214 212" fill="none" stroke="#A9672F" stroke-width="15" stroke-linecap="round"/>
+  <rect x="116" y="150" width="20" height="104" rx="10" fill="#A9672F"/>
+  <ellipse cx="124" cy="254" rx="14" ry="5" fill="#A9672F"/>
+  <path d="M86 96 C 132 80 196 120 212 190 C 218 220 212 244 198 258 L 98 258 C 84 210 76 142 86 96 Z" fill="#C98345"/>
+  <ellipse cx="170" cy="214" rx="46" ry="44" fill="#A9672F" opacity=".55"/>
+  <ellipse cx="146" cy="253" rx="30" ry="7" fill="#A9672F"/>
+  <path d="M82 116 C 98 126 106 156 102 196 L 88 200 C 80 168 78 136 82 116 Z" fill="#EDCB9F" opacity=".9"/>
+  <rect x="86" y="150" width="22" height="108" rx="11" fill="#C98345"/>
+  <ellipse cx="92" cy="256" rx="17" ry="6" fill="#C98345"/>
+  <rect x="84" y="200" width="24" height="26" rx="4" fill="#FFFFFF"/>
+       <path d="M86 207h20M86 214h20M86 221h20" stroke="#DCD6CC" stroke-width="2"/>
+  <path d="M104 52 L 128 8 L 134 62 Z" fill="#A9672F"/>
+  <ellipse cx="98" cy="72" rx="40" ry="33" fill="#C98345"/>
+  <path d="M70 58 C 52 62 36 68 27 76 C 22 82 25 92 34 94 C 50 98 68 96 84 88 Z" fill="#C98345"/>
+  <path d="M32 90 C 46 96 64 96 80 90 L 80 97 C 64 102 46 102 33 97 Z" fill="#EDCB9F" opacity=".8"/>
+  <path d="M84 50 L 98 2 L 118 46 Z" fill="#C98345"/>
+  <path d="M92 42 L 99 18 L 109 41 Z" fill="#A9672F"/>
+  <ellipse cx="28" cy="79" rx="8" ry="6.5" fill="#2A211C"/>
+  <circle cx="81" cy="65" r="5" fill="#2A211C"/>
+  <circle cx="79.5" cy="63.5" r="1.6" fill="#FFFFFF" opacity=".8"/>
+  <path d="M74 108 C 90 118 118 116 132 102" fill="none" stroke="#E9A23B" stroke-width="10" stroke-linecap="round"/>
+       <path d="M80 112 C 94 120 114 118 126 108" fill="none" stroke="#FFF6DD" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 7" opacity=".9"/></g>
+  <g transform="translate(96 120) scale(0.9 0.9)"><path d="M50 88 C 18 66 0 48 0 26 C 0 10 12 0 26 0 C 38 0 46 8 50 16 C 54 8 62 0 74 0 C 88 0 100 10 100 26 C 100 48 82 66 50 88 Z" fill="#F08C6A"/></g>
+  <g transform="translate(660 100) scale(0.5 0.5)"><path d="M50 88 C 18 66 0 48 0 26 C 0 10 12 0 26 0 C 38 0 46 8 50 16 C 54 8 62 0 74 0 C 88 0 100 10 100 26 C 100 48 82 66 50 88 Z" fill="#F7B39A"/></g>
+  
+</svg>

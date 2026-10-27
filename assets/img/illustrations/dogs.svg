@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Two street dogs, one sitting and one standing">
+<defs></defs>
+
+  <rect width="600" height="450" fill="#F6E1BE"/>
+  <circle cx="300" cy="230" r="190" fill="#F1C47A"/>
+  <path d="M0 380 C 200 370 400 370 600 380 L 600 450 L 0 450 Z" fill="#E2C08A"/>
+  <ellipse cx="400" cy="402" rx="130" ry="10" fill="#143426" opacity="0.16"/>
+  <g transform="translate(270 176) scale(0.92 0.92)">
+  <path d="M250 104 C 284 96 292 62 272 52 C 260 46 250 58 258 68" fill="none" stroke="#27221F" stroke-width="13" stroke-linecap="round"/>
+  <rect x="122" y="140" width="17" height="88" rx="8.5" fill="#27221F"/>
+  <rect x="216" y="136" width="17" height="92" rx="8.5" fill="#27221F"/>
+  <path d="M96 100 C 130 84 214 84 248 98 C 270 108 268 150 244 160 C 210 172 140 170 108 158 C 88 150 82 112 96 100 Z" fill="#3A3431"/>
+  <path d="M104 124 C 120 140 150 156 196 160 C 160 168 124 166 108 156 C 98 148 98 134 104 124 Z" fill="#8C7F76" opacity=".7"/>
+  <path d="M200 112 C 226 106 252 116 254 140 C 256 160 240 170 222 168 C 236 150 230 126 200 112 Z" fill="#27221F" opacity=".5"/>
+  <rect x="100" y="140" width="19" height="88" rx="9.5" fill="#3A3431"/>
+  <rect x="234" y="134" width="19" height="94" rx="9.5" fill="#3A3431"/>
+  <path d="M60 70 C 64 92 74 110 90 120 L 118 92 C 104 84 92 70 84 56 Z" fill="#3A3431"/>
+  
+  <path d="M74 40 L 96 -2 L 104 52 Z" fill="#27221F"/>
+  <ellipse cx="70" cy="62" rx="36" ry="30" fill="#3A3431"/>
+  <path d="M44 50 C 28 54 14 60 6 68 C 2 74 5 82 13 84 C 28 88 44 86 58 80 Z" fill="#3A3431"/>
+  <path d="M12 80 C 25 86 42 86 56 80 L 56 87 C 42 92 25 92 13 87 Z" fill="#8C7F76" opacity=".8"/>
+  <path d="M56 40 L 70 -6 L 88 36 Z" fill="#3A3431"/>
+  <path d="M64 32 L 71 10 L 80 31 Z" fill="#27221F"/>
+  <ellipse cx="8" cy="70" rx="7.5" ry="6" fill="#120F0D"/>
+  <circle cx="55" cy="56" r="4.6" fill="#120F0D"/>
+  <circle cx="53.6" cy="54.6" r="1.5" fill="#FFFFFF" opacity=".8"/>
+  <path d="M66 86 C 76 98 94 104 108 100" fill="none" stroke="#D2683C" stroke-width="9" stroke-linecap="round"/></g>
+  <ellipse cx="200" cy="412" rx="90" ry="9" fill="#143426" opacity="0.16"/>
+  <g transform="translate(90 158) scale(0.98 0.98)">
+  <path d="M190 252 C 232 258 252 232 240 210 C 233 197 214 199 214 212" fill="none" stroke="#A9672F" stroke-width="15" stroke-linecap="round"/>
+  <rect x="116" y="150" width="20" height="104" rx="10" fill="#A9672F"/>
+  <ellipse cx="124" cy="254" rx="14" ry="5" fill="#A9672F"/>
+  <path d="M86 96 C 132 80 196 120 212 190 C 218 220 212 244 198 258 L 98 258 C 84 210 76 142 86 96 Z" fill="#C98345"/>
+  <ellipse cx="170" cy="214" rx="46" ry="44" fill="#A9672F" opacity=".55"/>
+  <ellipse cx="146" cy="253" rx="30" ry="7" fill="#A9672F"/>
+  <path d="M82 116 C 98 126 106 156 102 196 L 88 200 C 80 168 78 136 82 116 Z" fill="#EDCB9F" opacity=".9"/>
+  <rect x="86" y="150" width="22" height="108" rx="11" fill="#C98345"/>
+  <ellipse cx="92" cy="256" rx="17" ry="6" fill="#C98345"/>
+  
+  <path d="M104 52 L 128 8 L 134 62 Z" fill="#A9672F"/>
+  <ellipse cx="98" cy="72" rx="40" ry="33" fill="#C98345"/>
+  <path d="M70 58 C 52 62 36 68 27 76 C 22 82 25 92 34 94 C 50 98 68 96 84 88 Z" fill="#C98345"/>
+  <path d="M32 90 C 46 96 64 96 80 90 L 80 97 C 64 102 46 102 33 97 Z" fill="#EDCB9F" opacity=".8"/>
+  <path d="M84 50 L 98 2 L 118 46 Z" fill="#C98345"/>
+  <path d="M92 42 L 99 18 L 109 41 Z" fill="#A9672F"/>
+  <ellipse cx="28" cy="79" rx="8" ry="6.5" fill="#2A211C"/>
+  <circle cx="81" cy="65" r="5" fill="#2A211C"/>
+  <circle cx="79.5" cy="63.5" r="1.6" fill="#FFFFFF" opacity=".8"/>
+  <path d="M74 108 C 90 118 118 116 132 102" fill="none" stroke="#E9A23B" stroke-width="10" stroke-linecap="round"/>
+       <path d="M80 112 C 94 120 114 118 126 108" fill="none" stroke="#FFF6DD" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 7" opacity=".9"/></g>
+  
+</svg>
