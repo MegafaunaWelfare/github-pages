@@ -36,3 +36,8 @@
 ehthumbs.db
 Thumbs.db
 
+# Casebook files #
+##################
+# Exported or backed-up cases are encrypted, but they still don't belong in
+# a public repository.
+*.casebook

@@ -1,0 +1,23 @@
+{
+  "name": "MegaFauna Casebook",
+  "short_name": "Casebook",
+  "description": "Encrypted case files for animal cruelty investigations, from Megafauna Welfare Foundation.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF7F0",
+  "theme_color": "#FBF7F0",
+  "lang": "en-IN",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Open a new case", "short_name": "New case", "url": "./#new-case" },
+    { "name": "Cases", "short_name": "Cases", "url": "./#cases" }
+  ]
+}
